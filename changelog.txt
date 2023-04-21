@@ -1,0 +1,408 @@
+
+=================================================================================================================
+CHANGELOG
+=================================================================================================================
+
+UPDATED (october 2014), build 8.5.2013
+- Added "Timestones enabled!" message in OPTION screen when selecting NORMAL and lives is oo
+- Some bugfixes (nothing major)
+
+=================================================================================================================
+UPDATED (july 2014), build 8.4.2013
+- Changed 2 enddemo graphics (looks much better now)
+- Changed some tile graphics
+- Fixed some small tile objects (room 202)
+- Added "Timestones enabled!" message in OPTION screen when selecting EASY and lives is oo
+- Fixed logo popup (8 pixels on the right were not hidden)
+
+=================================================================================================================
+
+UPDATED (june 2014), build 8.2.2013
+- Fixed infobox in room 111 when using a gamepad.
+
+=================================================================================================================
+
+UPDATED (may 2014), build 8.0.2013
+- Added gamepad support in de password screen, so now you can enter password with a gamepad
+- Fixed bug in password system (some invalid passwords will raise an error)
+- Added ESCAPE using the gamepad (down + button(10))
+
+=================================================================================================================
+
+UPDATED (februari 2014), build 7.8.2013
+- Fixed bug in password system (Q would teleport to Valy Temple)
+
+=================================================================================================================
+UPDATED (januari 2014), build 7.7.2013
+- Fixed small joystick issue (nothing serious)
+
+=================================================================================================================
+
+UPDATED (august, 2013), build 7.6.2013
+- Added extra spikes in bonusroom 1 and changed layout of bottom pit a bit.
+- Added LEVEL indication at pause screen (debug only)
+- Added donkey kong bonus room (902)
+- Added ? on map for bonus temple
+- in room101 first dart is on repeat in HARD mode
+
+=================================================================================================================
+
+UPDATED (june, 2013), build 7.5.2012
+- Changed "easyblock" to MEDIUM and EASY level. (e.g. room101 will have smaller pit with MEDIUM and EASY level, 
+  instead of EASY only.
+- Changed "NORMAL" to "NEW GAME" in option. Probably better.
+
+=================================================================================================================
+
+UPDATED (april, 2013), build 7.4.2012
+FINAL VERSION
+- Added music room (room 999)
+
+=================================================================================================================
+
+UPDATED (march, 2013), build 7.3.2012
+FINAL VERSION
+- Added more music
+- Fixed bug in bonusroom 1
+- Changed priority setting on game, and changed some other game settings to improve performance a little bit
+
+=================================================================================================================
+
+UPDATED (march, 2013), build 7.2.2012
+FINAL VERSION
+- Fixed some typos
+- Added bonus room (room 901) with music (more bonus rooms will be added later). 
+  Password for bonusroom 1 is hidden in temple 1.
+- Added music room (not done yet)
+=================================================================================================================
+
+UPDATED (december, 2012), build 6.8.2012
+FINAL VERSION (again)
+- Fixed some TIMESTONES. They were placed on a certain spot, when playing with a gamepad it interferes when
+  jumping: Instead of jumping (button 3), it would restart the level.
+- Fixed pilar window: It was slightly out of view in room 604.
+
+=================================================================================================================
+
+UPDATED (october, 2012), build 6.7.2012
+FINAL VERSION (again)
+- Fixed red floor button for water (can only be triggered once now)
+- Changed intro credits scroller text 
+- Fixed typo "pilar" to "pillar" in help screen
+- Fixed miniplatform problem: player can get stuck in platform when jumping up (e.g. in room 513)
+- Fixed "deadly blocks" problem (player could get stuck between blocks when jumping into them)
+- Room 508: - platform next to button moved 16 pixels down, to prevent other (easy) solution
+            - Added extra treasure player must collect to open door
+- Room 510: Changed platform speed of upward motion from 4 to 3 (screen 1 and screen 2)
+- Room 512: - On screen below: Made water pit smaller to make it easier to jump over
+            - Extra ammo on hidden screen
+- Room 513: - Lowered platform in water in screen 1 to prevent other (easy) solution
+            - Moved pillar buttons a bit to the left
+            - Added ammo in hidden screen (not really necessary, but a bit easier)
+- Room 603: Changed challenge time 133 to 333 seconds (was a typo)
+- Room 604: Made platform smaller, so it's easier to jump over the rolling boulder
+
+=================================================================================================================
+
+UPDATED (april, 2012), build 6.6.2012
+FINAL VERSION 
+- Fixed all hint texts (some were partially out of screen when using a gamepad)
+- Fixed panel of moving pillars (in some screen, the panel was a bit too high)
+- When using a gamepad, the timestone buttons (1,2 and 3) didnt work. Now, it does.
+
+=================================================================================================================
+
+UPDATED (march, 2012), build 6.5.2012
+FINAL VERSION! (again, *sigh*). 
+Still some small issues found, so here's a final again. The fixes are minor though....
+- Fixed a typo in the end demo screen
+- Added an extra wall in room 604 next to the pillars, so you cant walk back
+- Added an extra enemy in room 206 near the stairs, so now you must get the bullits to get through
+
+=================================================================================================================
+
+UPDATED (february 6, 2012): 
+- FINAL VERSION! (again). 
+
+I thought I was finished again, but I was not....
+Because many people still find the game too hard, I decided to add checkpoints in the game (I call them
+"timestones"). When lives is set to infinity and level is set to EASY or NORMAL, timestones are available in 
+the game. At level HARD, no timestones are available.
+ 
+All changes are as follows:
+- ADDED: Timestones added as checkpoints for all temples. This way, player can save in a room.
+  Timestones are turned on if lives settings is set to oo (infinity). In EASY mode, more timestones are 
+  available to use, compared to NORMAL mode. HARD mode has no timestones.
+  A Timestone contains:
+    (1) Save    : Save checkpoint
+    (2) Load    : Load checkpoint
+    (3) Restart : Restart room
+  When player dies, last checkpoint is loaded automatically (if a checkpoint was saved.)
+  When entering a new room, the timestone is empty and cannot be loaded, until you save a checkpoint first in 
+  that room.
+- ADDED: Room 501, extra hint for hidden wall.
+- ADDED: Corrected typo ("Bullet", instead of "Bullit")
+- CHANGED: Room 501, removed spike left from hole, to make the jump a bit easier.
+- CHANGED: Room 411, made path of vertical moving platform a bit longer.
+- CHANGED: Room 513, made arrow faster, so you cannot escape it.
+- CHANGED: Standing still "no bullit" enemy could not be killed by a bullit, but could be killed by dynamite.
+           Now, he cannot be killed by ammo, only by an arrow. (room 513)
+- CHANGED: Room 603, added extra wall. Will only open if all treasures are collected.
+- BUG: When hitting F1,F2 or F3 on every first room of every temple, your ammo is gone. -> FIXED.
+- BUG: Room 313: Almost impossible to jump in narrow passage from the right. -> FIXED.
+- BUG: Room 508: When livingstone falls down off screen, it pops up on top of the room and stays trapped. 
+  -> FIXED.
+- BUG: Room 509: Player gets stuck when jumping against bridge from below, while a stone is on top. -> FIXED.
+- BUG: Room 510: Moving platform and block cause bugs. 
+  -> FIXED: Now, block is crushed when block is between platform and floor. Also, when two blocks move over 
+  each other, blocks are crushed.
+- BUG: Room 510: Room could be solved differently, which was not the intention. 
+  -> FIXED. (removed brown block, and added hump)
+- BUG: Room 512: Player should be crushed by platform when block is on top. -> FIXED
+- BUG: Fixed some bug with Eagle Eye item and password system.
+- BUG: Fixed spike bug in room 603 under the bridge.
+- BUG: Changed sprite mask enemy to make the base 32 pixels wide, so player cannot stand close to enemy.
+  (e.g. room 513, 604 could be solved differently).
+
+Still, some bugs are not full fixed. I'm trying to solve them in the next build version, but they are not 
+really urgent:
+- BUG: Sometimes, player fall through platform when trying to jump on them. -> NOT FIXED YET.
+- BUG: Room 510: Moving platform looses its path in certain occasions. -> NOT FIXED YET. 
+- BUG: Room 511: Room could be solved differently, which was not the intention. -> NOT FIXED YET.
+
+=================================================================================================================
+
+UPDATED (june 2011): 
+- FINAL VERSION! (2nd one)
+
+I thought I was finished, but I was not....
+Because many people find the game too hard, I decided to add "EASY" mode.
+Now there is "EASY", "NORMAL" and "HARD" mode.
+
+EASY MODE    : A lot of hints, and some minor level changes (some pits are smaller, 
+               some arrows shoot slower, etc), for easy play.
+NORMAL MODE  : Original mode, where the game should be played in.
+               Reasonable amount of hints. Pits are wider, arrows faster, etc.
+HARD MODE    : Almost no hints. Find everything out yourself. Very hard. Only for
+               hardcore players, like people who can finish Rick Dangerous game with
+               only 3 lives.
+
+You can set the EASY, NORMAL or HARD mode in "OPTIONS" and then "LEVEL".
+Default, the game is in NORMAL mode.
+
+=================================================================================================================
+
+UPDATED (may 2011): 
+- FINAL VERSION! 
+  build 2.00, can be seen in caption of intro screen window: use F4 to switch to window mode.
+  It took me some time, but the game is finally finised!!!
+  Total of 69 mindboggling levels. Ingenious level design!!!
+
+- Challenges added : make it through a level as fast as possible, collecting all the lives and killing all the
+  enemies for blue medals. (not needed to complete game, just for fun to see if you're a hardcore player)
+- Debug mode is now off by default (can be set on with a password or cheat)
+- Added password to jump to end demo. (yes, there is a end demo if you complete the game!)
+
+If bugs occur (you can send me an email about it if you find something), I will deal with them, 
+but in the mean time: ENJOY!!!!
+
+=================================================================================================================
+
+UPDATED (11th of june 2010): 
+- Added a lot of hints 
+- Added option for hints: [normal] = all hints, [hard] = only crucial hints 
+- Fixed some bugs in Eagly Eye item (can be used from room 502 and above) and Eagly Eye is now fully functional.
+  Use <f> and arrow keys to use it to view the entire room
+- Added gamepad support! (tested with Logitech Wireless rumble controller II) 
+- Changed graphics for dynamite block (little bit greener, so better to recognize) 
+- Made some levels for temple 5 (difficult!) 
+- Changed some level graphics, so that hidden things are a bit easier to spot 
+- Fixed bug in lifesystem 
+- Changed some levels, so that they're easier... 
+- Room102: moved enemy a bit to the right, so you can jump over (tip from Ordvana) 
+- Room104: removed spikes and added slight delay in arrow to make it a bit easier (tip from Ordvana) 
+
+=================================================================================================================
+
+UPDATED (24 may 2009): 
+Due to physical problems, I cannot work on this game at the moment... 
+Stay tuned for updates.
+
+=================================================================================================================
+
+UPDATED (2 march 2009): 
+- Moved room 309 to 510 as it was too difficult that early in the game. 
+- Made new rooms in temple 5 and moved some rooms around there. 
+
+=================================================================================================================
+
+UPDATED (1 february 2009): 
+Changed a lot of stuff!
+- Updated a lot of graphics! -  I changed a lot of tiles/bricks, and added a lot of new graphics to the game, 
+  like vines, green stuff, wooden pieces, etc,etc. Levels look quite pretty now! 
+- Removed some bugs and levels that could be played differently 
+- Added extra sound effects when player hits water 
+- Standard settings: unlimited lives (can be changed in "OPTION") 
+- Debug cheat is on by default: 
+     N   : next room 
+     B   : previous room 
+     F9  : save state 
+     F10 : load state  
+- And last but not least, I (FINALLY!) added duo play with Rick Dangerous!
+  When you get to temple 6 (DUJO TEMPLE), you get to play with Rick Dangerous "Lost Viking" style! You control 
+  both Lao and Rick and you have to work together to solve the puzzles. Rick can crawl and duck, jump higher and 
+  further, but hates water and cannot hold as much ammo as Lao. Use each of their advantages to solve the room 
+  and work your way deeper into the temple! Only 1 level is playable (room601). 
+  Use password "SAAABQZWIZ" and jump directly to room601 and get control of Rick!  
+
+=================================================================================================================
+
+UPDATED (9 november 2008):
+- fixed a stupid msgbox bug, now password system is working again :) 
+
+=================================================================================================================
+
+UPDATED (24 october 2008):
+- fixed treasure: going back and forth you could collect a 1- up over and over again
+- fixed some rooms 
+- changed some rooms 
+- fixed all the hint texts 
+
+=================================================================================================================
+
+UPDATED (12 october 2008):
+- fixed ammo: when continue in some rooms, you cant get ammo to proceed 
+- fixed player: when hit, now ammo is gone 
+- changed some rooms 
+
+=================================================================================================================
+
+UPDATED (8 october 2008):
+- changed graphics for Lao 
+- added Rick (everything working, except crawling) 
+- added duo play (room 601, no screens yet). Switch character with 'V' 
+- added switch keys with Lao (key 'Z') 
+- fixed some bugs 
+- removed some music 
+- changed some rooms 
+- added new password algorithm (and new password file) 
+- no debug mode 
+- added passwords for lifecheat and debugcheat 
+
+=================================================================================================================
+
+UPDATED (30 may 2008):
+- fixed annoying ladder bug! YEEEH! (if you jump into ladder, and come at the top, you fall 
+  down the ladder sometimes) 
+- changed room 112 a bit (added arrow trap) 
+- added "quit game?" question (escape) 
+- added working hints (only for temple 1 and 2 at the moment, set ON/OFF in 'option' menu) 
+- added 'eagle eye' item (you can see multiple parts of the room), still in debug, not full working 
+- treasure may contain 1UP now 
+- changed some levels slightly 
+- some ammo boxes missing here and there 
+- added game icon 
+TODO: 
+- passwords are gonna be also based on how many lives you have still left (password file will be UPDATED soon) 
+- eagle eye item will be spreaded into 4 pieces and hidden in temple (4 pieces make whole item) 
+- 2 player mode with Rick (work together to solve puzzles 'lost vikings' style) 
+
+=================================================================================================================
+
+UPDATED (15 april 2008): 
+- some ammo boxes missing here and there 
+- vista compatible! 
+- some bug fixes 
+- added debug mode (ON for the moment)
+     N   : next room 
+     B   : previous room 
+     F9  : save state 
+     F10 : load state 
+
+=================================================================================================================
+
+UPDATED (24 march 2008): 
+- interludes of 4 temples finished 
+- total of 5 temples, 55 levels! 
+- added splashscreen 
+- added lives and gameover screen 
+- added decent help screen (F1) 
+- added pause/password/temple map screen (F2) 
+- added room map screen (F3) 
+- added options screen, now fully working (lives/hints settings) 
+- fixed bug with multiple rooms 
+- fixed bug with panel (player not properly aligned) 
+- fixed bug with keys (keys gone when going to pause screen and back) 
+- fix bug with ammo when going back to room 1 of current temple 
+
+=================================================================================================================
+
+UPDATED (28 dec 2007): 
+- fixed some more bugs 
+- made some new levels 
+- fixed some levels 
+
+=================================================================================================================
+
+UPDATED (18 dec 2007): 
+- total of 4 temples! 
+- total of 52 playable levels 
+- panel with switches and moving walls added! (nice new trap) 
+- more water! 
+- some bug fixes 
+
+=================================================================================================================
+
+UPDATED (11 nov 2007): 
+- added a lot new levels -  total 40 playable levels, 10 more in progress 
+- water trap 1 ready: water that things can float in! 
+- water trap 2 ready: water that rises! 
+- doors and multiple keys added 
+- living stone added that looks around and rolls in your direction 
+- living stone sensitive for bullits and dynamite 
+- floor buttons for opening en closing doors added 
+- stone can be put on floor buttons 
+- multiple rooms, so puzzles scattered over more than 1 room : difficult! 
+- changed some levels 
+- intro in between added 
+- credits scroller (smooth) 
+- some bug fixes 
+
+=================================================================================================================
+
+UPDATED (13 sept 2007): 
+- changed some levels 
+- fixed room17 
+- added checkpoint 
+- added water trap (still in testing mode) 
+
+=================================================================================================================
+
+UPDATED (12 sept 2007): 
+- changed some levels 
+- added some checkpoints 
+- annoying platform bug gone! 
+- password and continu is working now 
+- menus fully working except 'option' menu 
+
+=================================================================================================================
+
+UPDATED (11 sept 2007): 
+- 27 levels! 
+- bugfixes 
+
+=================================================================================================================
+
+UPDATED (august 2007): 
+- bug fixes 
+- more sound fx 
+- death animation for enemy (a la rick dangerous) 
+- prevent shooting fast one bullit after another (to prevent blowing up ammo chest) 
+- rolling stone now has sound when falling on floor and a screen shake 
+ 
+=================================================================================================================
+
+UPDATED (july 2007): 
+- first version
+ 
+=================================================================================================================
